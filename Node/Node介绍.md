@@ -253,7 +253,13 @@ server.listen('8080', function() {
 
 * 说白了，在一台计算机中，同一端口号同一时间只能被一个程序占用
 
-  
+
+### 4.2. Content-type
+
+* [Content-type 资源类型配对](http://tool.oschina.net/commons)
+* 图片/html/text/js等资源类型不同 Content-type 也不同
+* 对于文本类型的数据，最好加上编码，避免中文乱码现象
+* 举例：`res.setHeader('Content-type', 'text/plain; chartset=utf-8')`
 
 ## 5. 留言本
 
